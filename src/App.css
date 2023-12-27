@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+/* Add this CSS to your stylesheets or use a CSS-in-JS solution if you prefer */
+
+/* Style for the container of the grid */
+.swiper-container {
+  width: 100%;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style for each grid item (swiper-slide) */
+.swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the image inside each grid item */
+.swiper-slide img {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  max-height: 200px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain the aspect ratio and cover the container */
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for the title/paragraph inside each grid item */
+.swiper-slide p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Add these styles to your App.css file */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
 }

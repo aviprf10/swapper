@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import TopAlbumsCarousel from './components/TopAlbumsCarousel';
+import NewAlbumsCarousel from './components/NewAlbumsCarousel';
+//import FilterSection from './components/FilterSection';
+//import FAQAccordion from './components/FAQAccordion';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Qtify App</h1>
+      <TopAlbumsCarousel />
+      <NewAlbumsCarousel />
+       {/* <FilterSection /> */}
+      {/* <FAQAccordion />  */}
     </div>
   );
 }
